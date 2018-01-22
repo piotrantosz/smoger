@@ -12,7 +12,7 @@ class SensorDataSerializer(serializers.ModelSerializer):
         print(self.context)
         sensor = get_object_or_404(Sensor, pk=self.context["view"].kwargs["sensor_id"])
         if sensor.owner != self.context["request"].user:
-            raise CustomValidation('Access denied - not owner of sensor', 'sensor',
+            raise CustomValidation('You are not the owner of this sensor.', 'detail',
                                    status_code=status.HTTP_403_FORBIDDEN)
         return sensor
 

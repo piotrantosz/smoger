@@ -1,0 +1,16 @@
+{% load i18n static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="{% static "css/app.css" %}" rel="stylesheet" type="text/css" media="all"/>
+    <title>{% block title %}{% trans 'Home' %}{% endblock %} | Smoger</title>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+{% include "header.html" %}
+{% block content %}{% endblock %}
+</body>
+</html>

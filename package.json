@@ -1,0 +1,30 @@
+{
+  "name": "smog_web",
+  "version": "1.0.0",
+  "description": "smoger website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Boquete/smoger.git"
+  },
+  "keywords": [
+    "smoger"
+  ],
+  "author": "Piotr Antosz",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Boquete/smoger/issues"
+  },
+  "homepage": "https://github.com/Boquete/smoger#readme",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-install": "^1.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0"
+  }
+}

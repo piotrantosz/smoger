@@ -1,3 +1,16 @@
+{% load i18n %}
+{% load static %}
 <header class="header">
-    <h1>Gowno</h1>
+    <div class="content limiter">
+        <h1><a class="logo" href="{% url 'index' %}"><img src="{% static 'images/fog-and-sun.svg' %}"/><p>Smoger</p></a></h1>
+        <nav>
+            {% if user.is_authenticated %}
+                <ul><a>{% trans "my account" %}</a></ul>
+                <ul><a href="{% url 'account_logout' %}">{% trans "logout" %}</a></ul>
+            {% else %}
+                <ul><a href="{% url 'account_login' %}">{% trans "login" %}</a></ul>
+                <ul><a href="{% url 'account_signup' %}">{% trans "sign up" %}</a></ul>
+            {% endif %}
+        </nav>
+    </div>
 </header>

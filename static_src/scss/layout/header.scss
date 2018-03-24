@@ -1,3 +1,49 @@
 .header {
-  background: red;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  background: #314755; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #26a0da, #314755); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  position: absolute;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    h1 {
+      padding-left: 45px;
+      margin: 0;
+      width: 130px;
+      flex: 1;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        p {
+          margin: 0;
+        }
+
+        img {
+          padding-right: 4px;
+          height: 33px;
+        }
+      }
+    }
+
+    nav {
+      padding-right: 45px;
+      text-align: right;
+      flex: 1;
+
+      ul {
+        display: inline-block;
+      }
+    }
+  }
 }

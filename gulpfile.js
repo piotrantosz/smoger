@@ -7,8 +7,10 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('static/css'))
 });
 
-gulp.task('sass:watch', function () {
+
+gulp.task('sass:watch', function(){
   gulp.watch('static_src/scss/**/*.scss', ['sass']);
+  // Other watchers
 });
 
 gulp.task("build", ["sass"]);

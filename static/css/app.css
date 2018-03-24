@@ -1,2 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,500,700&subset=latin-ext");
+html {
+  margin: 0; }
+
+body {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.limiter {
+  max-width: 83%;
+  margin: 0 auto; }
+
+.content {
+  padding-top: 82px; }
+
 .header {
-  background: red; }
+  font-family: 'Dosis', sans-serif;
+  color: white;
+  background: #314755;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #26a0da, #314755);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #26a0da, #314755);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  position: absolute; }
+  .header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    .header .content h1 {
+      padding-left: 45px;
+      margin: 0;
+      width: 130px;
+      flex: 1; }
+      .header .content h1 a {
+        display: flex;
+        align-items: center; }
+        .header .content h1 a p {
+          margin: 0; }
+        .header .content h1 a img {
+          padding-right: 4px;
+          height: 33px; }
+    .header .content nav {
+      padding-right: 45px;
+      text-align: right;
+      flex: 1; }
+      .header .content nav ul {
+        display: inline-block; }
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  align-items: center; }
+  footer p {
+    margin: 0; }
+
+.account {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  font-family: 'Dosis', sans-serif !important;
+  background: #314755;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #26a0da, #314755);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #26a0da, #314755);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .account .data {
+    color: #2b2b2b;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    min-width: 25%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 82px;
+    font-size: 1rem;
+    text-align: center; }
+    .account .data hr {
+      margin-top: 50px;
+      display: block;
+      height: 1px;
+      border: 0;
+      border-bottom: 1px solid #d3d3d3;
+      padding: 0; }
+    .account .data .extra {
+      font-size: 0.9rem;
+      color: #878787;
+      margin-bottom: 0; }
+      .account .data .extra a {
+        font-weight: 700; }
+    .account .data .errorlist {
+      background-color: #c0392b;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      margin-bottom: 20px; }
+      .account .data .errorlist li {
+        color: white;
+        margin-top: 4px;
+        margin-bottom: 4px; }
+    .account .data .login-or {
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      padding: 30px 0;
+      color: #212121;
+      font-weight: 500; }
+    .account .data .login-or > span {
+      position: relative;
+      display: inline-block; }
+    .account .data .login-or > span:before,
+    .account .data .login-or > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: #878787; }
+    .account .data .login-or > span:before {
+      right: 100%;
+      margin-right: 15px; }
+    .account .data .login-or > span:after {
+      left: 100%;
+      margin-left: 15px; }
+    .account .data p {
+      margin: 0 0 14px 0; }
+    .account .data h1 {
+      margin: 0 0 20px 0; }
+    .account .data form label {
+      display: block;
+      margin-top: 7px;
+      margin-bottom: 5px;
+      font-weight: 700; }
+    .account .data form button {
+      cursor: pointer;
+      margin-top: 4px;
+      background-color: #8c8c8c;
+      font-family: 'Dosis', sans-serif !important;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-weight: 700;
+      color: white;
+      font-size: 1rem; }
+      .account .data form button:hover {
+        background-color: #6b6b6b;
+        transition: background-color .125s, border-color .125s, color .125s; }
+    .account .data form .primaryAction {
+      background-color: #1C9DD4; }
+      .account .data form .primaryAction:hover {
+        background-color: #2187B4; }
+    .account .data form input {
+      margin-bottom: 7px;
+      outline: none;
+      padding: 3px 8px;
+      background: transparent;
+      box-shadow: none;
+      height: 26px;
+      line-height: 24px;
+      border-radius: 4px;
+      border: solid 1px #d3d3d3;
+      -webkit-transition: border 1s;
+      /* Safari */
+      transition: border 1s; }
+      .account .data form input:focus {
+        -webkit-transition: all 1s;
+        /* Safari */
+        transition: all 1s;
+        border: solid 1px #1C9BD2; }
+      .account .data form input::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #fff; }
+      .account .data form input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+        opacity: 0; }
+      .account .data form input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #fff;
+        opacity: 0; }
+      .account .data form input:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #fff; }
+    .account .data ul {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+      margin: 0; }
+      .account .data ul li {
+        display: inline-block;
+        color: black;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px; }
+        .account .data ul li .facebook {
+          background: #4866A6; }
+        .account .data ul li .google {
+          background: #DE4F46; }
+        .account .data ul li a {
+          border-radius: 999px;
+          color: white;
+          padding: 8px 12px; }
+        .account .data ul li a {
+          cursor: pointer;
+          transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99), transform 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99); }
+          .account .data ul li a:hover {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05), 0 3px 3px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 6px 6px 6px rgba(0, 0, 0, 0.13);
+            transform: scale(1.05) translateY(-0.5rem); }
+          .account .data ul li a:active {
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05), 0 3px 3px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 6px 6px 6px rgba(0, 0, 0, 0.13); }

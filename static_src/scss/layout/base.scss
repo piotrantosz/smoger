@@ -1,0 +1,26 @@
+$light-blue: #1C9DD4;
+
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Add media width
+.limiter {
+  max-width: 83%;
+  margin: 0 auto;
+}
+
+.content {
+  padding-top: 82px;
+}
+

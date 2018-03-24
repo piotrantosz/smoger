@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block head_title %}{% trans "Sensors" %} - {% endblock %}
+{% block content %}
+    <h1>{% trans "Sensors" %}: </h1>
+
+    {% for sensor in sensors %}
+            <h2>{{ sensor }}</h2>
+            <ul>
+                <li>Hardware name: {{ sensor.hardware_name }}</li>
+                <li>Owner: {{ sensor.owner }}</li>
+                {% for data in sensor.sensor_data.all %}
+                    <li>{{ data.date }} | {{ data.lat }} x {{ data.lon }}</li>
+                {% endfor %}
+            </ul>
+            <hr>
+    {% endfor %}
+{% endblock %}

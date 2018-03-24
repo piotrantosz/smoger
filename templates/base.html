@@ -1,4 +1,4 @@
-{% load i18n static %}
+{% load i18n staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="{% static "css/app.css" %}" rel="stylesheet" type="text/css" media="all"/>
-    <title>{% block title %}{% trans 'Home' %}{% endblock %} | Smoger</title>
+    <title>{% block head_title %}{% trans 'Home' %}{% endblock %} | Smoger</title>
     {% block extra_head %}{% endblock %}
 </head>
 <body>
 {% include "header.html" %}
-{% block content %}{% endblock %}
+<div class="{% if "accounts" in request.path  %}account{% else %}content{% endif %}">
+    <div class="data">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+{% include "footer.html" %}
 </body>
 </html>
